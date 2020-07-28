@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.8986bff4.css">
+    <title>Map</title>
+<script src="/styles.8986bff4.js"></script></head>
+
+<body>
+    <div class="container">
+        <div class="nav" id="popMenu">
+            <div class="app">
+                <div class="app-title">
+                    <span>¿Que desea reportar?</span>
+                </div>
+                <div class="select-report">
+                    <select id="categoryType">
+                        <option value="Inseguridad">Inseguridad</option>
+                        <option value="Iluminacion">Iluminacion</option>
+                        <option value="Terreno">Terreno</option>
+                    </select>
+                </div>
+                <div id="textbox">
+                    <div class="subtitle">
+                        Ingrese el reporte: 
+                    </div>
+                        <textarea name="note" cols="40" rows="10" minlength="10" maxlength="70" required="" resize:="" none="" id="textarea"></textarea>
+                </div>
+                <div class="btns">
+                    <button id="submitBtn">Aceptar</button>
+                    <button id="closeMenu">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="map">
+        </div>
+    </div>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD40iBClWX-S8w5BeFPSfWFDJNfa2DI8fw"></script>
+    <script src="/map.27237bf4.js"></script>
+    <script src="/marker.23fb6158.js"></script>
+    
+</body>
+
+</html>

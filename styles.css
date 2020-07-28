@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 60px;
-  margin-top: -40px;
+  margin-top: -20px;
 }
 .container-fluid .nav .app .select-report select {
   display: flex;
@@ -78,7 +78,6 @@ body {
 }
 .container-fluid .nav .app #textbox {
   display: flex;
-  margin-top: 35px;
   flex-direction: column;
   width: 100%;
   justify-content: center;

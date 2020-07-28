@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Map</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="nav" id="popMenu">
             <div class="app">
                 <div class="app-title">
                     <span>¿Que desea reportar?</span>
                 </div>
                 <div class="select-report">
-                    <select id="categoryType">
+                    <select id="categoryType" class="btn btn-info">
                         <option value="Inseguridad">Inseguridad</option>
                         <option value="Iluminacion">Iluminacion</option>
                         <option value="Terreno">Terreno</option>
@@ -29,7 +30,7 @@
                         <textarea 
                         name="note" 
                         cols="40" 
-                        rows="10"
+                        rows="5"
                         minlength="10"
                         maxlength="70"
                         required
@@ -37,8 +38,8 @@
                         id="textarea"></textarea>
                 </div>
                 <div class="btns">
-                    <button id="submitBtn">Aceptar</button>
-                    <button id="closeMenu">Cerrar</button>
+                    <button id="submitBtn" class="btn btn-primary">Aceptar</button>
+                    <button id="closeMenu" class="btn btn-danger">Cerrar</button>
                 </div>
 
             </div>

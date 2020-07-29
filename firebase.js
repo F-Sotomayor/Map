@@ -1,5 +1,5 @@
 // Your web app's Firebase configuration
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBKLO0nvS0yshEtjZRan_5MauJeNsnnT5E",
   authDomain: "mapa-js-b02df.firebaseapp.com",
   databaseURL: "https://mapa-js-b02df.firebaseio.com",
@@ -12,3 +12,5 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+
+console.log(firebase)

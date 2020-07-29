@@ -12,6 +12,10 @@
     height: 100vh;
     padding: 12px;
     background-color: rgb(241, 241, 241);
+    background-image: url("/dist/images/bg-login.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .navbar-container {
         display: flex;
@@ -34,7 +38,7 @@
                 align-items: center;
 
                 a {
-                    color: black;
+                    color: rgb(34, 34, 34);
                     text-decoration: none;
                     font-size: 20px;
 
@@ -56,9 +60,11 @@
             h1 {
                 display: flex;
                 flex: 1;
+                height: 100%;
+                margin-left: -24px;
                 justify-content: center;
                 align-items: center;
-                color: black;
+                color: rgb(34, 34, 34);
             }
         }
 
@@ -84,6 +90,7 @@
             justify-content: center;
             text-align: center;
             flex: 0.5;
+            color: rgb(34, 34, 34);
         }
 
         .main-btn {

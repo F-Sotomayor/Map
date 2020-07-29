@@ -12,6 +12,10 @@
   height: 100vh;
   padding: 12px;
   background-color: #f1f1f1;
+  background-image: url("/bg-login.0a413e45.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container-login .navbar-container {
   display: flex;
@@ -34,7 +38,7 @@
   align-items: center;
 }
 .container-login .navbar-container .links .nav-item a {
-  color: black;
+  color: #222222;
   text-decoration: none;
   font-size: 20px;
 }
@@ -52,9 +56,11 @@
 .container-login .navbar-container .logo h1 {
   display: flex;
   flex: 1;
+  height: 100%;
+  margin-left: -24px;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #222222;
 }
 .container-login .navbar-container .empty {
   display: flex;
@@ -76,6 +82,7 @@
   justify-content: center;
   text-align: center;
   flex: 0.5;
+  color: #222222;
 }
 .container-login .main-content .main-btn {
   display: flex;

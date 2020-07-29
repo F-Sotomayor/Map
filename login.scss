@@ -102,8 +102,10 @@
                 display: flex;
                 flex: 1;
                 background-image: url("/dist/images/map-preview.png");
-                background-position: center;
-                background-size: contain;
+                background-position: 35%;
+                background-size: fill;
+                background-repeat: no-repeat;
+                background-origin: content-box;
                 margin-bottom: 24px;
             }
         }

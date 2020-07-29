@@ -6,7 +6,9 @@
   "dependencies": {
     "parcel-bundler": "^1.12.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel login.html"

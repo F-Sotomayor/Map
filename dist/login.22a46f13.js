@@ -117,63 +117,79 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"marker.js":[function(require,module,exports) {
-// Grabbing checkbox values
-var ifSecurity = document.getElementById("ifSecurity"); // Grabbing poppable menu
+})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-var popMenu = document.getElementById("popMenu");
-var closeMenu = document.getElementById("closeMenu");
-var submitBtn = document.getElementById("submitBtn");
-var noteInput = document.getElementById("textarea");
-var typeReport = document.getElementById("categoryType");
-google.maps.event.addListener(map, 'click', function (event) {
-  // Opens the modal
-  popMenu.style.display = "flex";
-  noteInput.value = null; // Adds marker and closes modal
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
 
-  submitBtn.addEventListener("click", function () {
-    addMarker(event.latLng, map);
-    popMenu.style.display = "none";
-    event.latLng = null;
-    event.map = null;
-  }); // Closes modal and resets markers value
-
-  closeMenu.addEventListener("click", function () {
-    event.latLng = null;
-    event.map = null;
-    popMenu.style.display = "none";
-  });
-}); // Adds a marker to the map.
-
-function addMarker(location, map) {
-  // Add the marker at the clicked location
-  var marker = new google.maps.Marker({
-    position: location,
-    map: map,
-    draggable: true,
-    icon: "/markers/".concat(typeReport.value, ".png")
-  }); // Adds info when clicking the marker 
-
-  var infowindowContent = {
-    category: "".concat(typeReport.value),
-    date: new Date(),
-    note: "".concat(noteInput.value),
-    open: false
-  };
-  var infowindow = new google.maps.InfoWindow({
-    content: "Tipo:".concat(infowindowContent.category, "<br>\n      Fecha: ").concat(infowindowContent.date, "<br>\n      Nota: ").concat(infowindowContent.note)
-  });
-  marker.addListener('click', function (event) {
-    if (infowindowContent.open === false) {
-      infowindow.open(map, marker);
-      infowindowContent.open = true;
-    } else {
-      infowindow.close();
-      infowindowContent.open = false;
-    }
-  });
+  return bundleURL;
 }
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"login.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"C:\\Users\\Facundo\\Desktop\\Coding\\Web Dev\\Map\\dist\\images\\bg-login.jpg":[["bg-login.0a413e45.jpg","dist/images/bg-login.jpg"],"dist/images/bg-login.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -377,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","marker.js"], null)
-//# sourceMappingURL=/marker.23fb6158.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/login.22a46f13.js.map

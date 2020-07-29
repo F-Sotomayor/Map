@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.8986bff4.css">
+    <link rel="stylesheet" href="/ui.bf34bdb0.css">
+    <title>Map</title>
+<script src="/styles.8986bff4.js"></script><script src="/ui.bf34bdb0.js"></script></head>
+
+<body>
+    <div class="container-fluid">
+        <div class="nav" id="popMenu">
+            <div class="app">
+                <div class="app-title">
+                    <span>¿Que desea reportar?</span>
+                </div>
+                <div class="select-report">
+                    <select id="categoryType" class="btn btn-info">
+                        <option value="Inseguridad">Inseguridad</option>
+                        <option value="Iluminacion">Iluminacion</option>
+                        <option value="Terreno">Terreno</option>
+                    </select>
+                </div>
+                <div id="textbox">
+                    <div class="subtitle">
+                        Ingrese el reporte:
+                    </div>
+                    <textarea name="note" cols="40" rows="5" minlength="10" maxlength="70" required="" resize:="" none="" id="textarea"></textarea>
+                </div>
+                <div class="btns">
+                    <button id="submitBtn" class="btn btn-primary">Aceptar</button>
+                    <button id="closeMenu" class="btn btn-danger">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+        <button style="position:absolute;top:12px;right:12px;z-index:1000;" id="logout">Cerrar sesion</button>
+        <div id="map">
+        </div>
+    </div>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD40iBClWX-S8w5BeFPSfWFDJNfa2DI8fw"></script>
+    <script src="/map.27237bf4.js"></script>
+    
+</body>
+
+</html>

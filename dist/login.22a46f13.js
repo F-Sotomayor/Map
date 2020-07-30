@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Facundo\\Desktop\\Coding\\Web Dev\\Map\\dist\\images\\bg-login.jpg":[["bg-login.0a413e45.jpg","dist/images/bg-login.jpg"],"dist/images/bg-login.jpg"],"C:\\Users\\Facundo\\Desktop\\Coding\\Web Dev\\Map\\dist\\images\\map-preview.png":[["map-preview.dea053cd.png","dist/images/map-preview.png"],"dist/images/map-preview.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\Facundo\\Desktop\\Coding\\Web Dev\\Map\\dist\\images\\bg5.jpg":[["bg5.8747f8e6.jpg","dist/images/bg5.jpg"],"dist/images/bg5.jpg"],"./dist\\images\\quilmes3.png":[["quilmes3.73cbc259.png","dist/images/quilmes3.png"],"dist/images/quilmes3.png"],"C:\\Users\\Facundo\\Desktop\\Coding\\Web Dev\\Map\\dist\\images\\map-preview.png":[["map-preview.dea053cd.png","dist/images/map-preview.png"],"dist/images/map-preview.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54925" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58624" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

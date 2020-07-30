@@ -10,9 +10,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 12px;
-  background-color: #f1f1f1;
-  background-image: url("/bg-login.0a413e45.jpg");
+  background-image: url("/bg5.8747f8e6.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  background-color: rgba(30, 143, 255, 0.747);
 }
 .container-login .navbar-container .links {
   display: flex;
@@ -33,25 +32,34 @@
 }
 .container-login .navbar-container .links .nav-item {
   display: flex;
-  flex: 0.75;
+  flex: 1.25;
   justify-content: center;
   align-items: center;
 }
 .container-login .navbar-container .links .nav-item a {
-  color: #222222;
+  color: #d8d8d8;
   text-decoration: none;
   font-size: 20px;
 }
 .container-login .navbar-container .links .nav-item a:hover {
-  color: #007bff;
+  color: white;
+  border-bottom: 1px solid white;
 }
 .container-login .navbar-container .logo {
   display: flex;
-  flex: 0.75;
+  flex: 0.5;
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: #007bff;
+}
+.container-login .navbar-container .logo .logo2 {
+  display: flex;
+  background-image: url("/quilmes3.73cbc259.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 80%;
 }
 .container-login .navbar-container .logo h1 {
   display: flex;
@@ -60,11 +68,12 @@
   margin-left: -24px;
   justify-content: center;
   align-items: center;
-  color: #222222;
+  letter-spacing: 2px;
+  color: #ebebeb;
 }
 .container-login .navbar-container .empty {
   display: flex;
-  flex: 1.25;
+  flex: 0.9;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -82,12 +91,18 @@
   justify-content: center;
   text-align: center;
   flex: 0.5;
-  color: #222222;
+  color: #dddddd;
 }
 .container-login .main-content .main-btn {
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 100%;
+}
+.container-login .main-content .main-btn button {
+  height: 50px;
+  width: 120px;
+  font-size: 16px;
 }
 .container-login .main-content .main-btn .btn-primary {
   font-size: 1.5rem;
@@ -104,7 +119,7 @@
   display: flex;
   flex: 1;
   background-image: url("/map-preview.dea053cd.png");
-  background-position: 35%;
+  background-position: 5;
   background-size: fill;
   background-repeat: no-repeat;
   background-origin: content-box;

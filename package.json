@@ -8,11 +8,13 @@
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
+    "eslint": "^7.5.0",
     "sass": "^1.26.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html map.html"
+    "start": "parcel index.html map.html",
+    "eslint": "eslint --ignore-path .gitignore"
   },
   "keywords": [],
   "author": "",

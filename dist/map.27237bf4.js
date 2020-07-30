@@ -25172,7 +25172,7 @@ function add(_ref) {
     map: map,
     icon: "/markers/".concat(category, ".png")
   });
-  marker.addListener('click', function (event) {
+  marker.addListener("click", function (event) {
     infoWindow.setContent("Tipo:".concat(category, "<br>\n    Fecha: ").concat(createdAt, "<br>\n    Nota: ").concat(note, "<br>\n    Creador: ").concat(creator));
     infoWindow.open(map, marker);
   });
@@ -25192,7 +25192,7 @@ var _marker = require("./marker");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var user;
-var map = new google.maps.Map(document.getElementById('map'), {
+var map = new google.maps.Map(document.getElementById("map"), {
   zoom: 17,
   center: {
     lat: -34.7010524,
@@ -25240,7 +25240,7 @@ _api.default.registries.list().then(function (registries) {
   });
 });
 
-google.maps.event.addListener(map, 'click', function (event) {
+google.maps.event.addListener(map, "click", function (event) {
   // Opens the modal
   popMenu.style.display = "flex";
   noteInput.value = null; // Adds marker and closes modal
@@ -25307,7 +25307,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58624" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59876" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

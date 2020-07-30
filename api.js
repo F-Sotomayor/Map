@@ -8,10 +8,15 @@ export default {
   },
   registries: {
     add: (registry) => database.collection("registries").add(registry),
-    list: () => database.collection("registries").get().then((snapshot) =>
-    snapshot.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    })))
+    list: () =>
+      database
+        .collection("registries")
+        .get()
+        .then((snapshot) =>
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }))
+        ),
   },
 };

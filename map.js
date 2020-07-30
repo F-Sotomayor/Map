@@ -28,7 +28,7 @@ const popMenu = document.getElementById("popMenu");
 const closeMenu = document.getElementById("closeMenu");
 const submitBtn = document.getElementById("submitBtn");
 const noteInput = document.getElementById("textarea");
-let typeReport = document.getElementById("categoryType");
+const typeReport = document.getElementById("categoryType");
 
 api.auth.onChange((_user) => {
   if (!_user) {

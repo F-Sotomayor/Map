@@ -126,8 +126,8 @@
         display: flex;
         flex: 1;
         background-image: url("/dist/images/map-preview.png");
-        background-position: 5;
-        background-size: fill;
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         background-origin: content-box;
         margin-bottom: 24px;

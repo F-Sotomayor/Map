@@ -25,7 +25,8 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  background-color: rgba(30, 143, 255, 0.747);
+  padding: 0 20px;
+  background-color: #fafafa;
 }
 .container-login .navbar-container .links {
   display: flex;
@@ -42,12 +43,12 @@ html {
   align-items: center;
 }
 .container-login .navbar-container .links .nav-item a {
-  color: white;
+  color: dodgerblue;
   text-decoration: none;
   font-size: 30px;
 }
 .container-login .navbar-container .links .nav-item a:hover {
-  color: #d1d1d1;
+  color: goldenrod;
   border-bottom: 1px solid white;
 }
 .container-login .navbar-container .logo {
@@ -62,19 +63,10 @@ html {
   flex: 1;
   height: 80%;
 }
-.container-login .navbar-container .logo .logo2 h1 {
-  display: flex;
-  flex: 1;
-  height: 100%;
-  margin-left: -24px;
-  justify-content: flex-start;
-  align-items: center;
-  letter-spacing: 2px;
-  color: #ebebeb;
-}
 .container-login .navbar-container .logo .logo2 img {
-  width: 140px;
-  height: 95%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
 }
 .container-login .navbar-container .empty {
   display: flex;

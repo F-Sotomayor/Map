@@ -35,7 +35,6 @@
         flex: 1.25;
         justify-content: center;
         align-items: center;
-
         a {
           color: rgb(216, 216, 216);
           text-decoration: none;
@@ -51,28 +50,27 @@
 
     .logo {
       display: flex;
-      flex: 0.5;
+      flex: 1;
       justify-content: center;
       align-items: center;
       height: 100%;
       .logo2 {
         display: flex;
-        background-image: url("./dist/images/quilmes3.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
         flex: 1;
         height: 80%;
-      }
-      h1 {
-        display: flex;
-        flex: 1;
-        height: 100%;
-        margin-left: -24px;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 2px;
-        color: rgb(235, 235, 235);
+        h1 {
+          display: flex;
+          flex: 1;
+          height: 100%;
+          margin-left: -24px;
+          justify-content: flex-start;
+          align-items: center;
+          letter-spacing: 2px;
+          color: rgb(235, 235, 235);
+        }
+        img {
+          width: 140px;
+        }
       }
     }
 
@@ -136,6 +134,106 @@
         -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .howto-modal {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 10vh;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    background-color: rgba(90, 88, 88, 0.671);
+    .close-modal {
+      position: absolute;
+      top: 80vh;
+      right: 1vw;
+      button {
+        font-size: 20px;
+      }
+    }
+    .howto-content {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 70%;
+      height: 70%;
+      background-color: rgb(214, 214, 214);
+      border-radius: 24px;
+      padding: 20px;
+      .step1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 0.5;
+        color: rgb(54, 54, 54);
+        border-right: 2px solid rgb(48, 48, 48);
+        span {
+          font-size: 36px;
+          text-decoration: underline;
+        }
+        .explain {
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          font-size: 28px;
+          justify-content: center;
+          align-items: center;
+          width: 90%;
+          flex: 1;
+          span {
+            font-size: 20px;
+            text-decoration: none;
+          }
+        }
+      }
+      .step2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 0.5;
+        color: rgb(54, 54, 54);
+        span {
+          font-size: 36px;
+          text-decoration: underline;
+        }
+        .explain {
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          font-size: 28px;
+          justify-content: center;
+          align-items: center;
+          width: 90%;
+          flex: 1;
+          span {
+            font-size: 20px;
+            text-decoration: none;
+          }
+        }
       }
     }
   }

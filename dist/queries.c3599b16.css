@@ -78,6 +78,13 @@
     height: 20vh;
     padding: 6px;
   }
+  .container-login .navbar-container .logo {
+    flex-direction: column;
+  }
+  .container-login .navbar-container .logo .links {
+    flex-direction: row;
+    width: 100%;
+  }
 
   .container-login .navbar-container .logo {
     width: 100%;

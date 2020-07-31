@@ -74,6 +74,13 @@
     flex-direction: column;
     height: 20vh;
     padding: 6px;
+    .logo {
+      flex-direction: column;
+      .links {
+        flex-direction: row;
+        width: 100%;
+      }
+    }
   }
   .container-login .navbar-container .logo {
     width: 100%;

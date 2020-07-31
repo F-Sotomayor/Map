@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .container-login {
   display: flex;
   flex-direction: column;
@@ -33,16 +37,17 @@
 .container-login .navbar-container .links .nav-item {
   display: flex;
   flex: 1.25;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
 .container-login .navbar-container .links .nav-item a {
-  color: #d8d8d8;
+  color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
 }
 .container-login .navbar-container .links .nav-item a:hover {
-  color: white;
+  color: #d1d1d1;
   border-bottom: 1px solid white;
 }
 .container-login .navbar-container .logo {
@@ -69,6 +74,7 @@
 }
 .container-login .navbar-container .logo .logo2 img {
   width: 140px;
+  height: 95%;
 }
 .container-login .navbar-container .empty {
   display: flex;

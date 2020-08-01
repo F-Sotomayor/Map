@@ -25077,6 +25077,7 @@ require("firebase/firestore");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Firebase SDK
 _app.default.initializeApp({
   apiKey: "AIzaSyBKLO0nvS0yshEtjZRan_5MauJeNsnnT5E",
   authDomain: "mapa-js-b02df.firebaseapp.com",
@@ -25117,6 +25118,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+// Sign In with Google on new window
 var _default = {
   auth: {
     signIn: function signIn() {
@@ -25129,6 +25131,7 @@ var _default = {
       return _firebase.auth.onAuthStateChanged(callback);
     }
   },
+  // Push registry to database
   registries: {
     add: function add(registry) {
       return _firebase.database.collection("registries").add(registry);
@@ -25189,7 +25192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60017" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50497" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

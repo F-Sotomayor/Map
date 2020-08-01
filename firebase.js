@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 
 import "firebase/auth";
 import "firebase/firestore";
-
+// Firebase SDK
 firebase.initializeApp({
   apiKey: "AIzaSyBKLO0nvS0yshEtjZRan_5MauJeNsnnT5E",
   authDomain: "mapa-js-b02df.firebaseapp.com",

@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/bg5.8747f8e6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-login .navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 20px;
+  background-color: #fafafa;
+}
+.container-login .navbar-container .links {
+  display: flex;
+  flex: 0.5;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container-login .navbar-container .links .nav-item {
+  display: flex;
+  flex: 1.25;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container-login .navbar-container .links .nav-item a {
+  color: dodgerblue;
+  text-decoration: none;
+  font-size: 30px;
+}
+.container-login .navbar-container .links .nav-item a:hover {
+  color: goldenrod;
+  border-bottom: 1px solid white;
+}
+.container-login .navbar-container .logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container-login .navbar-container .logo .logo2 {
+  display: flex;
+  flex: 1;
+  height: 80%;
+}
+.container-login .navbar-container .logo .logo2 img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+.container-login .navbar-container .empty {
+  display: flex;
+  flex: 0.9;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container-login .main-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: flex-start;
+  flex: 1;
+  padding: 36px;
+}
+.container-login .main-content .main-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: 0.5;
+  color: #dddddd;
+}
+.container-login .main-content .main-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.container-login .main-content .main-btn button {
+  height: 50px;
+  width: 120px;
+  font-size: 16px;
+}
+.container-login .main-content .main-btn .btn-primary {
+  font-size: 1.5rem;
+}
+.container-login .main-content .main-preview {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: 1.5;
+  margin: auto;
+  width: 50%;
+}
+.container-login .main-content .main-preview .preview {
+  display: flex;
+  flex: 1;
+  background-image: url("/map-preview.dea053cd.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.container-login .howto-modal {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 10vh;
+  left: 0;
+  height: 90vh;
+  width: 100%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  background-color: rgba(90, 88, 88, 0.671);
+}
+.container-login .howto-modal .close-modal {
+  position: absolute;
+  top: 80vh;
+  right: 1vw;
+}
+.container-login .howto-modal .close-modal button {
+  font-size: 20px;
+}
+.container-login .howto-modal .howto-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  height: 70%;
+  background-color: #d6d6d6;
+  border-radius: 24px;
+  padding: 20px;
+}
+.container-login .howto-modal .howto-content .step1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0.5;
+  color: #363636;
+  border-right: 2px solid #303030;
+}
+.container-login .howto-modal .howto-content .step1 span {
+  font-size: 36px;
+  text-decoration: underline;
+}
+.container-login .howto-modal .howto-content .step1 .explain {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex: 1;
+}
+.container-login .howto-modal .howto-content .step1 .explain span {
+  font-size: 20px;
+  text-decoration: none;
+}
+.container-login .howto-modal .howto-content .step2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0.5;
+  color: #363636;
+}
+.container-login .howto-modal .howto-content .step2 span {
+  font-size: 36px;
+  text-decoration: underline;
+}
+.container-login .howto-modal .howto-content .step2 .explain {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex: 1;
+}
+.container-login .howto-modal .howto-content .step2 .explain span {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=/login.f062701c.css.map */

@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"howto.js":[function(require,module,exports) {
+// Open and close modal
 var closeModal = document.getElementById("closeModal");
 closeModal.addEventListener("click", function (e) {
   document.getElementById("howtoModal").style.display = "none";
@@ -155,7 +156,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60017" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50497" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

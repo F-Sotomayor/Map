@@ -1,0 +1,44 @@
+// Mobile Landing page
+
+@media (max-width: 700px) {
+  .container-login .navbar-container {
+    height: 20vh;
+    padding: 12px 0px;
+  }
+  .container-login .navbar-container .logo {
+    flex-direction: column;
+    .logo2 {
+      justify-content: center;
+      align-items: center;
+    }
+    .links {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+// Mobile Modal
+
+@media (max-width: 700px) {
+  .container-fluid .nav .app {
+    width: 80vw;
+  }
+}
+@media (max-width: 340px) {
+  .container-fluid .nav .app .app-title {
+    font-size: 20px;
+  }
+  .container-fluid .nav .app .select-report select {
+    font-size: 16px;
+  }
+  .container-fluid .nav .app #textbox textarea {
+    width: 95%;
+  }
+  .container-fluid .nav .app .btns {
+    justify-content: space-around;
+    button {
+      width: 100px;
+    }
+  }
+}

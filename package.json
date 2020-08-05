@@ -22,7 +22,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html map.html comousar.html"
+    "start": "parcel index.html map.html panel.html"
   },
   "keywords": [],
   "author": "",
